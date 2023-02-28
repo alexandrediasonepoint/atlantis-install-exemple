@@ -1,3 +1,5 @@
+# Atlantis
+https://www.runatlantis.io/docs/installation-guide.html
 ## Setup Atlantis en production
 -	Setup du serveur
 -	Setup du VCS dans notre cas github
@@ -55,3 +57,14 @@ Afin de vérifier que atlantis marche et tourne bien :
 - Se connecter sur la page web tournant sur le port 80 (http) / 443 (https)
 ![webhook](image/atlantis80.png)
 - Se connecter sur le port 4141 (http://mon_serveur:4141/events) via le navigateur  et vérifier que l’on récupère bien un code d’erreur **405**
+
+## Production
+Liste des points à sécuriser sur un serveur Atlantis:
+- Secrets des webhooks
+- Credentials des providers cloud (AWS, AZURE, GCP, ect...)
+- Variables d'environnements au lieu d'harcoder les secrets dans des fichiers de configuration
+- SSL / HTTPS
+- Authentification page web Atlantis
+- RCE Atlantis plan / apply sur le serveur Atlantis
+
+Source avec plus d'information: https://cloud.hacktricks.xyz/pentesting-ci-cd/atlantis-security
