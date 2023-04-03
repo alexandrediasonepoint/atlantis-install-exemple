@@ -7,10 +7,18 @@ https://www.runatlantis.io/docs/installation-guide.html
      - Webhook
 
 ## VCS
-Settings -> Développer settings -> Personnal access tokens -> Tokens (classic)  
+2 choix utiliser des tokens qui donnent les droits sur touts les repository "Tokens (classic)" ou des "Fine-grained token (Beta)" qui permettent de choisir les repository sur lequel le token est utile.
+
+**Settings -> Développer settings -> Personnal access tokens -> Tokens (classic)**  
 Ajouter un Personnal access token (classic) pour que le serveur puisse faire des requêtes d’API a github avec ce compte la
 https://github.com/settings/tokens
-### Settings
+
+
+**Settings -> Développer settings -> Personnal access tokens -> Fine-grained token (Beta)**   
+Ajouter un Fine-grained token (Beta) pour que le serveur puisse faire des requêtes d’API a github avec ce compte la
+https://github.com/settings/tokens?type=beta
+
+### Settings (Legacy)
 ![webhook](image/tokken-1.png)
 ### Settings / Developer Settings
 ![webhook](image/tokken-2.png)
@@ -18,6 +26,12 @@ https://github.com/settings/tokens
 ![webhook](image/tokken-3.png)
 ### Generated token
 ![webhook](image/tokken-4.png)
+### New fine grained personnal access token (Recommandé)
+![webhook](image/tokken-fine1.png)
+### Permission
+![webhook](image/tokken-fine2.png)
+### Select repository permission
+![webhook](image/tokken-fine3.png)
 
 
 ## Webhook
